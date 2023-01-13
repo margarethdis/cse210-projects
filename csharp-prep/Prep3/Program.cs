@@ -8,15 +8,16 @@ class GuessMyNumber
         Console.WriteLine("");
         int Magic =  int.Parse(Console.ReadLine());
 
-
-
         Console.Write("What is your guess? ");
         int adivina = int.Parse(Console.ReadLine());
 
-
+    
+    
+    //add loop
         if (Magic > adivina )
         {
             Console.WriteLine("HIGHER");
+        
         }
         else if (Magic < adivina)
         {
@@ -24,20 +25,7 @@ class GuessMyNumber
         }
         else
         {
-            Console.Write("Your guessed it");
+            Console.WriteLine("Your guessed it");
         }
-
-
-      
-
-  
-       
-
-
-
-
-      
-
-
     }
 }
