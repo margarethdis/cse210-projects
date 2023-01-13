@@ -4,17 +4,25 @@ class Program
 {
     static void Main(string[] args)
     {
+        List<int> numbers = new List<int>();
+
+
         Console.WriteLine("Enter a list of numbers, type 0 when finished. ");
         
-        Console.Write("Enter number: ");
-        int Number =  int.Parse(Console.ReadLine());
+        int userNumber = -1;
+        while (userNumber !=0)
+        {
+            Console.Write("Enter number:  (if you have finished enter 0) ");
+
+            string answer = Console.ReadLine();
+            Number =  int.Parse(answer);
+        }
+
+    
+
         
+     
 
-        List<int> numbers;
-        numbers = new List<int>();
-
-        numbers.Add(Number);
-        Console.WriteLine(numbers.Count);
 
 
     }
