@@ -14,8 +14,14 @@ class Program
         {
             Console.Write("Enter number:  (if you have finished enter 0) ");
 
+
             string answer = Console.ReadLine();
-            Number =  int.Parse(answer);
+            userNumber =  int.Parse(answer);
+
+            if (userNumber !=0)
+            {
+                numbers.Add(userNumber);
+            }
         }
 
     
