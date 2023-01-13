@@ -22,6 +22,8 @@ class Program
             {
                 numbers.Add(userNumber);
             }
+
+            int suma = numbers.Sum();
         }
 
     
