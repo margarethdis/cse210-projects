@@ -23,8 +23,16 @@ class Program
                 numbers.Add(userNumber);
             }
 
-            int suma = numbers.Sum();
+            
         }
+
+        int sum = 0;
+        foreach (int Numbers in numbers )
+        {
+            sum += Numbers;
+        }
+
+        Console.WriteLine($"The sum is: {sum}");
 
     
 
