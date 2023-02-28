@@ -22,22 +22,45 @@ class Program
             if(UserChoice == "1")
             {    
                 //aqui te muestra un prompt
-             
+                Prompts p = new
+                Prompts();
+
+                Console.WriteLine(p.RandomQuestion());
+                string answer = 
+                Console.ReadLine();
             
             }
             else if(UserChoice == "2")
             {       
-                //aqui despliega otra vez el menu  
+                //muestra la fecha que se guardo - prompt y la respuesta
+               Journal j =  new
+               Journal();
+
+               Console.Write(j._myjournal);
+               string respuestas = 
+               Console.ReadLine();
+
+               
+              
+               
+              
+               
+               
+
+               
+        
                 
             }
             else if(UserChoice == "3")
             {         
-                //aqui lo guarda
-            } 
-            else if(UserChoice == "4")
-            {         
-                //aqui termina el programa
+              
 
+
+            }
+
+            else if(UserChoice == "4")
+            {      
+              
             }
 
             }

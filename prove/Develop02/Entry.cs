@@ -10,18 +10,17 @@ public class Entry
     public Entry()
     {
         DateTime theCurrentTime = DateTime.Now;
-        _date = theCurrentTime.ToShortDateString();
+        string _date = theCurrentTime.ToShortDateString();
 
-        _prompt= prompts.RandomQuestion();
-        
-
+        string _prompt= prompts.RandomQuestion();  
 
         
 
     }
 
-
-
-
+    public void Display()
+    {
+        Console.WriteLine($"{_date}-{_prompt}{_userEntry} {_userEntry}");
+    }
 
 }
