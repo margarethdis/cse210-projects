@@ -21,46 +21,66 @@ class Program
                 
             if(UserChoice == "1")
             {    
-                //aqui te muestra un prompt
+    
                 Prompts p = new
                 Prompts();
 
                 Console.WriteLine(p.RandomQuestion());
-                string answer = 
+                string answer =
                 Console.ReadLine();
+
+            
+
+                
+
+               
+
+                
+
+                
+                
+               
+
+                
+
+                //crear date , el prompt , y el anser o user entry //
+                
+
+                
+
+                
             
             }
             else if(UserChoice == "2")
             {       
-                //muestra la fecha que se guardo - prompt y la respuesta
-               Journal j =  new
-               Journal();
+                Journal midiario =  new Journal();
+                midiario.Display();
+                Console.ReadLine();
 
-               Console.Write(j._myjournal);
-               string respuestas = 
-               Console.ReadLine();
 
-               
+
+
+                
               
-               
-              
-               
-               
 
-               
-        
                 
             }
-            else if(UserChoice == "3")
-            {         
-              
 
+            //load y save ton todos metodos dentro del journal class , y hacer uno para agregar un entri a la lista de entri del journal.
+            else if(UserChoice == "3")
+            {   
+
+              //proceso leer el txt en cada linea del txt deberia haber un entry , el txt seria la lista de entries del journal
+                Journal midiario = new Journal();
+                midiario.Load();
+                Console.ReadLine();
+                
 
             }
 
             else if(UserChoice == "4")
             {      
-              
+              //para guardar yo tendria que abrir un archivo txt y por cada entrie que haya en la lista de entries del Journal que write en el txt en cada linea el entry que se va agregando.
             }
 
             }
