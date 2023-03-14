@@ -4,6 +4,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+        Fractions fraction1 =  new Fractions();
+        Console.WriteLine(fraction1.GetFractionsString());
+        Console.WriteLine(fraction1.GetDecimalValue());
+        
+
+
+
+
     }
+
+
+
+    
 }
